@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Accordion } from '@/components/ui/accordion';
 import { toast } from 'sonner';
+import { useNavigate } from "react-router-dom";
 import { 
   Phone, MessageCircle, Ruler, Layout, Palette, Wrench, Package, Zap, Home, 
   Check, MapPin, Clock, Mail, Grid3x3, Square, Columns, Maximize2, LayoutGrid, 
@@ -23,6 +24,8 @@ import FAQItem from '@/components/FAQItem.jsx';
 import MaterialFinishCard from '@/components/MaterialFinishCard.jsx';
 
 const HomePage = () => {
+  const navigate = useNavigate();
+  
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -66,6 +69,9 @@ const handleSubmit = async (e) => {
 
     if (res.ok) {
       toast.success("Request submitted. We will contact you shortly.");
+        setTimeout(() => {
+    navigate("/thank-you");
+  }, 1000);
       setFormData({
         name: '',
         phone: '',
