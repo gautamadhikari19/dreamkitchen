@@ -25,7 +25,7 @@ import MaterialFinishCard from '@/components/MaterialFinishCard.jsx';
 
 const HomePage = () => {
   const navigate = useNavigate();
-  
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -426,11 +426,11 @@ const handleSubmit = async (e) => {
                       <SelectValue placeholder="Select Budget Range" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="1-2">₹1L - ₹2L</SelectItem>
-                      <SelectItem value="2-3">₹2L - ₹3L</SelectItem>
-                      <SelectItem value="3-5">₹3L - ₹5L</SelectItem>
-                      <SelectItem value="5-8">₹5L - ₹8L</SelectItem>
-                      <SelectItem value="8+">₹8L+</SelectItem>
+                      <SelectItem value="1-2L">₹1L - ₹2L</SelectItem>
+                      <SelectItem value="2-3L">₹2L - ₹3L</SelectItem>
+                      <SelectItem value="3-5L">₹3L - ₹5L</SelectItem>
+                      <SelectItem value="5-8L">₹5L - ₹8L</SelectItem>
+                      <SelectItem value="8L+">₹8L+</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
