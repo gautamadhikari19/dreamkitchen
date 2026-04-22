@@ -22,7 +22,7 @@ import ProcessStep from '@/components/ProcessStep.jsx';
 import TestimonialCard from '@/components/TestimonialCard.jsx';
 import FAQItem from '@/components/FAQItem.jsx';
 import MaterialFinishCard from '@/components/MaterialFinishCard.jsx';
-
+import Logo from '@/components/Logo';
 const HomePage = () => {
   const navigate = useNavigate();
 
@@ -237,7 +237,7 @@ const handleSubmit = async (e) => {
       icon: Box,
       title: 'Membrane Kitchen',
       description: 'Budget-friendly membrane finish kitchen designs. Explore our membrane kitchen catalog for affordable kitchen options that do not compromise on style.',
-      image: 'https://images.unsplash.com/photo-1669211620495-00ad7993169a',
+      image: 'https://res.cloudinary.com/dw9v7jjrq/image/upload/v1776855591/MembraneKitchen_tpdwze.jpg',
       alt: 'Budget-friendly membrane finish kitchen design',
       imageContentKey: 'material-membrane-image'
     },
@@ -658,11 +658,11 @@ const handleSubmit = async (e) => {
                 <Phone className="h-5 w-5 mr-2" />
                 Call +91 9403893424
               </Button>
-              <Button size="lg" variant="outline" className="border-accent-foreground/20 text-accent-foreground hover:bg-accent-foreground/10 transition-all duration-200 active:scale-[0.98]" onClick={() => window.open('https://wa.me/919403893424', '_blank')}>
+              <Button size="lg" className="bg-background text-foreground hover:bg-background/90 transition-all duration-200 active:scale-[0.98]" onClick={() => window.open('https://wa.me/919403893424', '_blank')}>
                 <MessageCircle className="h-5 w-5 mr-2" />
                 WhatsApp Us
               </Button>
-              <Button size="lg" variant="outline" className="border-accent-foreground/20 text-accent-foreground hover:bg-accent-foreground/10 transition-all duration-200 active:scale-[0.98]" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <Button size="lg" className="bg-background text-foreground hover:bg-background/90 transition-all duration-200 active:scale-[0.98]" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 Get Free Quotation
               </Button>
             </div>
@@ -675,8 +675,10 @@ const handleSubmit = async (e) => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
-              <span className="text-xl font-bold mb-4 block">Dream Kitchens</span>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+            <div className="mb-4">
+              <Logo className="h-8" />
+            </div>              
+            <p className="text-sm text-muted-foreground leading-relaxed">
                 Helping families plan and build modular kitchens that fit their budget and lifestyle.
               </p>
             </div>

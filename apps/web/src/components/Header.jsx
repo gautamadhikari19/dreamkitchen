@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, X, Phone, MessageCircle } from 'lucide-react';
+import Logo from "@/components/Logo";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,8 +28,8 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <a href="#home" className="text-xl font-bold text-foreground" style={{letterSpacing: '-0.02em'}}>
-              Dream Kitchens
+            <a href="#home" className="flex items-center">
+              <Logo className="h-10" />
             </a>
           </div>
 

@@ -1,5 +1,6 @@
 import { Phone, MessageCircle, Mail, MapPin, ExternalLink, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Logo from "@/components/Logo";
 
 export default function Footer() {
   return (
@@ -11,9 +12,9 @@ export default function Footer() {
 
             {/* Brand */}
             <div>
-              <span className="text-xl font-bold mb-4 block">
-                Dream Kitchens
-              </span>
+              <div className="mb-4">
+                <Logo className="h-8" />
+              </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Helping families plan and build modular kitchens that fit their budget and lifestyle.
               </p>
